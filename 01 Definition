@@ -9,3 +9,13 @@
       *   The main goal of Spring Boot is to reduce development, 
           unit test, and integration test time and in Spring Boot, 
           there is no requirement for XML configuration.
+
+2) Spring-boot-Starter
+      * spring-boot-starter is a core dependency in Spring Boot applications.
+          It provides essential features like auto-configuration, logging 
+          and YAML support.
+          EX :-
+               <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter</artifactId>
+               </dependency>
