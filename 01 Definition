@@ -14,6 +14,11 @@
       * spring-boot-starter is a core dependency in Spring Boot applications.
           It provides essential features like auto-configuration, logging 
           and YAML support.
+
+          What it enables you to do Once added, you can:
+              * Create REST controllers using @RestController
+              * Handle HTTP requests with @GetMapping, @PostMapping, etc.
+              * Automatically start a web server when you run your application
           EX :-
                <dependency>
                     <groupId>org.springframework.boot</groupId>
