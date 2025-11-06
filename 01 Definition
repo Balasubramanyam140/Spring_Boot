@@ -41,12 +41,12 @@
      Ex :-
         application.properties file              DempApp.java
         ------------------------------          --------------------------------
-        |  #configure server port    |          | @RestController              |
-        | server.port=8080           |          | public class DemoApp{        |
-        |                            |          |    @Value("${coach.name}")   |
-        |  #configure my props       |          |     private String c         |
-        |  coach.name=Balu           |          |                              |
-        |  team.name=The BBS Crew    |          |                              |
+        |  #configure server port    |          | @RestController                   |
+        | server.port=8080           |          | public class DemoApp{             |
+        |                            |          |    @Value("${coach.name}")        |
+        |  #configure my props       |          |     private String coach.name;    |
+        |  coach.name=Balu           |          |     @Value("${team.name}")        |
+        |  team.name=The BBS Crew    |          |     private String teamName;      |
         ------------------------------          --------------------------------
 
 
