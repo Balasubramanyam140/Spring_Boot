@@ -1,4 +1,8 @@
 1) What is Spring Boot?
+2) Spring-boot-Starter
+3) Application.properties
+
+1) What is Spring Boot?
       *   Spring Boot is an open-source Java framework used to 
           create a Micro Service. 
       *   Spring boot is developed by Pivotal Team, and it provides
@@ -24,3 +28,39 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter</artifactId>
                </dependency>
+
+
+3) Application.properties
+     The application.properties file is a central configuration file used to define
+     various application settings, including database connectivity.
+                                   or
+     The application.properties file in a Spring boot project is a configuration
+     file used to define various settings and behaviours of your application. It allows
+     you to customize how your spring boot app runs without changing the code.
+
+     Ex :-
+        application.properties file              DempApp.java
+        ------------------------------          --------------------------------
+        |  #configure server port    |          | @RestController              |
+        | server.port=8080           |          | public class DemoApp{        |
+        |                            |          |    @Value("${coach.name}")   |
+        |  #configure my props       |          |     private String c         |
+        |  coach.name=Balu           |          |                              |
+        |  team.name=The BBS Crew    |          |                              |
+        ------------------------------          --------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
