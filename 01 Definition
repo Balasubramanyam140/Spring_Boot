@@ -80,7 +80,9 @@
             environment and more ...
 
           Key features :
-               - Health checks (     /actuator/health     )
+               - Health checks (     /actuator/health     )   
+                     Health info about your application. Check status of our app up or down.
+                    output : - {"status" : "UP" }
                - Metrics (     /actuator/metrics     )
                - Environment info (     /actuator/env     )
                - Thread dumps, beans, loggers, etc.
