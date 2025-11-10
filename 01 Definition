@@ -143,7 +143,13 @@
           SpringBoot Security is a module that helps secure your Spring Boot applications. It provides 
           built-in features for authentication (Who are you?) and authorization( what are you allowed to do? )
 
-      * You may NOT want to expose all of this information.
+      * You may NOT want to expose all of this information. to do that
+                    application.properties
+                --------------------------------------------------------------------
+               |   #Exclude individual endpoints with a commma-delimited list      |
+               |   #To exclude all endpoint use "*"
+               |     management.emdpounts.web.exposure.exclude=health,info         |
+                --------------------------------------------------------------------
       * Add Spring Security to project and endpoints are secured 
 
                 --------------------------------------------------------------------
