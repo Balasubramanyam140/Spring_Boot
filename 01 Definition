@@ -101,12 +101,14 @@
             -----------------------
                * By default, only /health is exposed
                * The /info endpoint can provide info about your application
+               * To expose individual endpoints we can use comma 
                * to expose /info
                     >  application.properties
                     -----------------------------------------------------------------------
                     |      management.endpoints.web.exposure.include=health,info            |
                     |      management.info.env.enabled=true                                 |
                     -----------------------------------------------------------------------
+               
                * To expose all actuator endpoints over HTTP use "*"
                     -----------------------------------------------------------------------
                     |         management.endpoints.web.exposure.include="                  |
