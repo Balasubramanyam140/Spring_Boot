@@ -1,6 +1,9 @@
 1) What is Spring Boot?
 2) Spring-boot-Starter
 3) Application.properties
+4) @RestController
+
+
 
 1) What is Spring Boot?
       *   Spring Boot is an open-source Java framework used to 
@@ -49,6 +52,25 @@
         |  team.name=The BBS Crew    |          |     private String teamName;      |
         ------------------------------          --------------------------------
 
+4) @RestController
+          @RestController is a specialzed annotation introduced in Spring 4.0, that is 
+          used to create RESTful web services.
+     DEF:-  
+          * It combines @Controller and @ResponseBody, which means that the methods in a class
+            annotated with @RestController will return data directly as JSON or XML, rather
+             than rendering a view.
+
+          Ex:-
+               |--------------------------------------------------
+               | @RestController                                   |
+               | public class Demo{                                |
+               |                                                   |
+               |    @GetMapping("/hello")                          |
+               |    public String sayHelo(){                       |
+               |          return "Hello, wworld!";                 |
+               |     }                                             |
+               | }                                                 |
+               |---------------------------------------------------|
 
 
 
