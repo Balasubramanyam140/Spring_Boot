@@ -2,7 +2,7 @@
 2) Spring-boot-Starter
 3) Application.properties
 4) @RestController
-
+5) SpringBoot Actuator
 
 
 1) What is Spring Boot?
@@ -72,6 +72,19 @@
                | }                                                 |
                |---------------------------------------------------|
 
+
+5) SpringBoot Actuator
+          Spring Boot Actuator is a powerful feature in Spring Boot that provides production-ready tools 
+          to help your monitor and manage your application. 
+        * It exposes various REST endpoints that give insights into the application's health, metrics,
+            environment and more ...
+
+          Key features :
+               - Health checks (     /actuator/health     )
+               - Metrics (     /actuator/metrics     )
+               - Environment info (     /actuator/env     )
+               - Thread dumps, beans, loggers, etc.
+               - Easily integrates with monitoring tools like Prometheus, Grafana and Spring Boot Admin.
 
 
 
