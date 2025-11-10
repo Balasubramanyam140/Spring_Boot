@@ -158,3 +158,9 @@
                * Spring Security will prompt for login ( Asks for username and password )
                     By default userName will be user and for password we have to check console logs
 
+        * To override default user name and generated password
+                    application.properties
+                --------------------------------------------------------
+               |       spring.security.user.name=balu                  |
+               |       spring.secutity.user.password=venkataramana     |     
+                --------------------------------------------------------
