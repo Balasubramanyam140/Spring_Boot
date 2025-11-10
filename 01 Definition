@@ -4,6 +4,8 @@
 4) @RestController
 5) SpringBoot Actuator
 6) SpringBoot Security
+7) @Value()
+
 
 1) What is Spring Boot?
       *   Spring Boot is an open-source Java framework used to 
@@ -170,3 +172,52 @@
                |       spring.security.user.name=balu                  |
                |       spring.secutity.user.password=venkataramana     |     
                 --------------------------------------------------------
+
+7) @Value()
+      *  The @Value annotation is commonly used in SpringFramework(especially in spring Boot) 
+          to inject values into fields from property files or environment variables.
+
+       Ex: -     
+               application.properties
+               ---------------------------------------------
+               |   #Define custom properties               |
+               |    coach.name=Balasubramanyam             |
+               |    team.name=Bonu                         |
+               ---------------------------------------------
+
+               FunRestController.java
+               ---------------------------------------------------------------------
+               |     @RestController                                                |
+               |     public class FunRestController {                               |
+               |     //inject properties for: coach.name and team.name              |
+               |     @Value("${coach.name}")                                        |
+               |     private String coachName;                                      |
+               |                                                                    |
+               |     @Value("${team.name}")                                         |
+               |     private String teamName;                                       |
+               ----------------------------------------------------------------------
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
