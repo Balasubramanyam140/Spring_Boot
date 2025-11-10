@@ -78,22 +78,56 @@
           to help your monitor and manage your application. 
         * It exposes various REST endpoints that give insights into the application's health, metrics,
             environment and more ...
+        * 	
+                    -----------------------------------------------------------------------
+                    |      <dependency>                                                   |
+          		|	     <groupId>org.springframework.boot</groupId>                 |
+          		|	     <artifactId>spring-boot-starter-actuator</artifactId>       |
+          		|      </dependency>                                                  |
+                    -----------------------------------------------------------------------
 
           Key features :
                - Health checks (     /actuator/health     )   
                      Health info about your application. Check status of our app up or down.
                     output : - {"status" : "UP" }
                - Metrics (     /actuator/metrics     )
+               - Beans  - List of all beans registered in the Spring application context
+               - Mappings  - List of all @requestMappins paths
                - Environment info (     /actuator/env     )
                - Thread dumps, beans, loggers, etc.
                - Easily integrates with monitoring tools like Prometheus, Grafana and Spring Boot Admin.
 
+            Exposing Endpoints :-
+            -----------------------
+               * By default, only /health is exposed
+               * The /info endpoint can provide info about your application
+               * to expose /info
+                    >  application.properties
+                    -----------------------------------------------------------------------
+                    |      management.endpoints.web.exposure.include=health,info            |
+                    |      management.info.env.enabled=true                                 |
+                    -----------------------------------------------------------------------
+               * To expose all actuator endpoints over HTTP use "*"
+                    -----------------------------------------------------------------------
+                    |         management.endpoints.web.exposure.include="                  |
+                    -----------------------------------------------------------------------
+             Info Endpoint :-
+             ---------------
+               */info gives info about your application.
+               * Default is empty 
+                    output :- { }
+               * To cutomise info endpoints or update with our info
+                    we have to update application.properties with our app info
+                  ------------------------------------------------------------------------
+                  |    info.app.name=My Super Cool APP                                   |
+                  |     info.app.description=A Crazy and fun App, yahoooooo!             |
+                  |     info.app.version= 1.0.0                                          |
+                  ------------------------------------------------------------------------
 
-
-
-
-
-
+                    >  now when we search -  http://localhost:8080/actuator/health the output will be
+                         ----------------------------------------------------------------------
+                         |     {
+                         |     "app"
 
 
 
