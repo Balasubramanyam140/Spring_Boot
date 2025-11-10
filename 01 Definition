@@ -3,7 +3,7 @@
 3) Application.properties
 4) @RestController
 5) SpringBoot Actuator
-
+6) SpringBoot Security
 
 1) What is Spring Boot?
       *   Spring Boot is an open-source Java framework used to 
@@ -139,6 +139,22 @@
 
 
 
+6) SpringBoot Security
+          SpringBoot Security is a module that helps secure your Spring Boot applications. It provides 
+          built-in features for authentication (Who are you?) and authorization( what are you allowed to do? )
 
+      * You may NOT want to expose all of this information.
+      * Add Spring Security to project and endpoints are secured 
 
+                --------------------------------------------------------------------
+               | <dependepency>                                                     |
+               |          <groupId> org.springframework.boot</groupId>              |    
+               |          <artifactId>spring-boot-starter-security</artifactId>     |    
+               | </dependepency>                                                     |
+                --------------------------------------------------------------------
+
+        >  Secured Endpoints ( If we added security )
+               * Now when you access: /actuator/beans
+               * Spring Security will prompt for login ( Asks for username and password )
+                    By default userName will be user and for password we have to check console logs
 
