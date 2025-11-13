@@ -177,6 +177,16 @@
       *  The @Value annotation is commonly used in SpringFramework(especially in spring Boot) 
           to inject values into fields from property files or environment variables.
 
+                                   or
+
+      * @Value is an annotation in Spring Framework used to inject values into fields,
+        method parameters, or constructor arguments. 
+          > These values can come from:
+              - Property files (application.properties or application.yml)
+              - Environment variables
+              - System properties
+              - Expressions (SpEL)
+
        Ex: -     
                application.properties
                ---------------------------------------------
