@@ -1,4 +1,5 @@
 1) IOC
+2) Spring Container
 
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
@@ -21,3 +22,10 @@
                      ------------------------------------------------------
                      |       Car car = new Car(new Engine());              |
                      ------------------------------------------------------
+
+2) Spring Container
+
+
+              > Primary Functions  :-
+                     * Create and manage objects ( IOC - Inversion of Control )
+                     * Inject object dependencies ( Dependency Injection )
