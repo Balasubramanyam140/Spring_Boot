@@ -213,6 +213,11 @@
           Think of it prefix added to all you application's endpoints.
        * When you deploy a web app, the server can host multiple appls. the context path helps differentiate them.
 
+     Syntax :- 
+     ------- 
+                         ------------------------------------------------------
+                        |       server.servlet.context-path=/myapp            |
+                         ------------------------------------------------------
      Ex :-     
                > if context path = /myapp
                > And you have an endpoint /home
