@@ -37,7 +37,11 @@
                      * Java Annotations (modern)
                      * Java Source Code (modern)
 
-
+       How it Works :-
+       ------------
+              * Reads configuration (XML, annotations, or Java config)
+              * Create beans and injects dependencies.
+              * Serves beans when requested.
 
 
 
