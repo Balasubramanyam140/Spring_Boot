@@ -1,5 +1,6 @@
 1) IOC
 2) Spring Container
+3) Dependency Injection
 
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
@@ -43,5 +44,13 @@
               * Create beans and injects dependencies.
               * Serves beans when requested.
 
+
+3) Dependency Injection
+       Spring Dependency Injection (DI) is a core concept of Spring Framework that implements 
+       Inversion of Control (IOC) by letting the container inject dependencies into objects 
+       rather than the objects creating them themselves.
+                                   or
+       Dependency Injection in a design pattern where objects receive their dependencies from
+       an external soruce (Spring Container) instaed of creating them internally.
 
 
