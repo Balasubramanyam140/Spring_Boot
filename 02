@@ -9,3 +9,15 @@
        * Normally, our code controls object creationa and dependency management.
        * with IOC, the control is inverted: the framework (like spring) creates 
           and injects dependencies for us.
+
+       Ex : -
+                     With IOC(Spring)  :-
+                     -----------------------------------------------------
+                     |        @Autowired                                   |
+                     |       private Car car;                              |
+                     ------------------------------------------------------
+
+                     Without IOC :-
+                     ------------------------------------------------------
+                     |       Car car = new Car(new Engine());              |
+                     ------------------------------------------------------
