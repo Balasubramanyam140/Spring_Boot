@@ -24,8 +24,20 @@
                      ------------------------------------------------------
 
 2) Spring Container
+       The Spring container is the component that creates, manages and configure beans (objects)
+       in a Spring application. It uses IOC (Inversion of Control) and DI (Dependency Injection) principle. 
 
-
-              > Primary Functions  :-
+          - > Primary Functions  :-
                      * Create and manage objects ( IOC - Inversion of Control )
                      * Inject object dependencies ( Dependency Injection )
+
+          - > Configure Spring Container
+              --------------------------
+                     * XML configure file (legacy)
+                     * Java Annotations (modern)
+                     * Java Source Code (modern)
+
+
+
+
+
