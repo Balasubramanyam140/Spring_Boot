@@ -5,3 +5,7 @@
        that shifts the responsibility of creating and managing objects from the application code 
        to a container or framework.
       
+                                          or
+       * Normally, our code controls object creationa and dependency management.
+       * with IOC, the control is inverted: the framework (like spring) creates 
+          and injects dependencies for us.
