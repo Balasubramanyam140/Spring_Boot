@@ -5,7 +5,7 @@
 5) SpringBoot Actuator
 6) SpringBoot Security
 7) @Value()
-
+8) Context Path
 
 1) What is Spring Boot?
       *   Spring Boot is an open-source Java framework used to 
@@ -208,6 +208,18 @@
                ----------------------------------------------------------------------
           
 
+8) Context Path
+          A context path is the base URL segment that identifies your web application on a server.
+          Think of it prefix added to all you application's endpoints.
+       * When you deploy a web app, the server can host multiple appls. the context path helps differentiate them.
+
+     Ex :-     
+               > if context path = /myapp
+               > And you have an endpoint /home
+               > now URL becomes:
+                         ------------------------------------------------------
+                        |           http://localhost:8080/myapp/home           |         
+                         ------------------------------------------------------
 
 
 
