@@ -53,4 +53,32 @@
        Dependency Injection in a design pattern where objects receive their dependencies from
        an external soruce (Spring Container) instaed of creating them internally.
 
+       > There are 3 main types of DI :-
+              1) Constructor Injection
+              2) SEtter Injection
+              3) Field Injection
+
+        --> 1) Constructor Injection
+               ---------------------
+                     * Dependencies are provided through the class constructor.
+                     * Use this when you have required dependencies.
+                     * Generally recommended by the spring.io development team as first choice.  
+                            ----------------------------------------------------
+                            |       @Component                                 |  
+                            |      public class Car{                           | 
+                            |              private Engine engine;              |
+                            |              @Autowired                          |  
+                            |              public Car(Enginer engine){         |
+                            |                     this.engine = engine;        |
+                            |              }                                   |
+                            |       }                                          |
+                            ----------------------------------------------------
+
+                     
+        --> 2) Setter Injection
+               ----------------
+                     * Use this when you have optional dependencies.
+                     * If dependency is not provided, your app can provided reasonable default logic.
+
+
 
