@@ -1,8 +1,9 @@
 1) IOC
 2) Spring Container
 3) Dependency Injection
-4) AutoWiring
-5) OPtional Dependencies
+4) OPtional Dependencies
+5) AutoWiring - @Autowired
+6) @Component
 
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
@@ -104,8 +105,12 @@
                             |       }                                          |
                             ----------------------------------------------------
 
+4) Optional Dependencies
+         An Optional dependency is a dependency that your class can work without. If it's not
+         provided by DI container, the class still functions by using a default behvaiour or 
+         skipping that feature.
 
-4) AutoWiring
+5) AutoWiring
        Autowiring is a Spring feature that automaticaaly injects bean dependencies by matching types
        (or qualifiers) instead of manually wiring then in XML or java configuration. It reduces boilerplate
        code and makes dependency management easier. 
@@ -130,16 +135,11 @@
                 |       }                                      |
                 ------------------------------------------------
 
-
-5) Optional Dependencies
-         An Optional dependency is a dependency that your class can work without. If it's not
-         provided by DI container, the class still functions by using a default behvaiour or 
-         skipping that feature.
-
-
-
-
-
+6) @Component
+        * @Component is a Spring annotation that marks a class as a Spring-managed bean.
+        * When you annotate a class with @Component, Spring's component scanning automatically
+          detects it and creates an instance of that class in the ApplicationContext.
+        * @Component tells Spring: "Please create and manage this object as a bean."
 
 
 
