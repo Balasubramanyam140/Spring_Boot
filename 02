@@ -80,5 +80,24 @@
                      * Use this when you have optional dependencies.
                      * If dependency is not provided, your app can provided reasonable default logic.
 
+                            -----------------------------------------------------------------
+                            |       public class Service {                                   |
+                            |              private Repository repo;                          |
+                            |                                                                |
+                            |              public void setRepository(Repository repo){       |
+                            |                     this.repo = repo;                          |
+                            |              }                                                 |
+                            |       }                                                        |
+                            ------------------------------------------------------------------
+                     
+         --> 3) Field Injection
+                ---------------              
+                     * Dependenices are injected directly into fields using annotations like @Autowired.
 
-
+                            ----------------------------------------------------
+                            |       @Component                                 |
+                            |       public class Car {                         |
+                            |              @Autowired                          |
+                            |              private Engine engine;              |
+                            |       }                                          |
+                            ----------------------------------------------------
