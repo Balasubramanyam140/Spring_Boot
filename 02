@@ -5,6 +5,7 @@
 5) AutoWiring - @Autowired
 6) @Component
 7) Bean
+8) @RestController
 
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
@@ -174,7 +175,17 @@
           1) Using @Component (or stereotypes like @Service, @repository, @controller).
           2) Using @Bean inside a @Configuration class.
           3) Using XML configuration (old style).
+                                   or
+       * Marks the class as a controller for handling HTTP requests.
+       * Automatically applies @ResponseBody to all methods, so the return value is written directly
+         to the HTTP response body.
+       * Commonly used in REST APIs.
 
+8) @RestController
+       * @RestController is a Spring annotation that combines @Controller and @ResponseBody.
+       * It is used to create RESTful web services in Spring MVC.
+       * When you annotate a class with @RestController, Spring treats it as a controller
+         where every method returns data directly (usually JSON or XML) instead of rendering a view.
 
 
 
