@@ -1,7 +1,7 @@
 1) IOC
 2) Spring Container
 3) Dependency Injection
-
+4) OPtional Dependencies
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
        that shifts the responsibility of creating and managing objects from the application code 
@@ -101,3 +101,27 @@
                             |              private Engine engine;              |
                             |       }                                          |
                             ----------------------------------------------------
+
+
+4) Optional Dependencies
+         An Optional dependency is a dependency that your class can work without. If it's not
+         provided by DI container, the class still functions by using a default behvaiour or 
+         skipping that feature.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
