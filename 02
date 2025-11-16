@@ -111,11 +111,13 @@
          provided by DI container, the class still functions by using a default behvaiour or 
          skipping that feature.
 
-5) AutoWiring
+5) AutoWiring - @Autowired
        Autowiring is a Spring feature that automaticaaly injects bean dependencies by matching types
        (or qualifiers) instead of manually wiring then in XML or java configuration. It reduces boilerplate
        code and makes dependency management easier. 
+        * If you only have one constructor then @Autowired on constructor is optional.
 
+       
                                    or
 
        Autowiring in Spring is a feature that allows the framework to automatically resolve and inject
