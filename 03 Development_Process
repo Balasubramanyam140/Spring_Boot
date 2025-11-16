@@ -73,7 +73,7 @@
                       |     private Coach myCoach;                                         |
                       |                                                                    |
                       |     @Autowired                                                     |
-                      |     public DemoController(Coach the Coach) {                       |
+                      |     public DemoController(Coach theCoach) {                       |
                       |           myCoach = theCoach;                                      |
                       |      }                                                             |
                       |                                                                    |
