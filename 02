@@ -4,6 +4,7 @@
 4) OPtional Dependencies
 5) AutoWiring - @Autowired
 6) @Component
+7) Bean
 
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
@@ -141,8 +142,13 @@
           detects it and creates an instance of that class in the ApplicationContext.
         * @Component tells Spring: "Please create and manage this object as a bean."
 
-
-
+7) Bean
+       * A bean is simply an object that is managed by the Spring IOC container.
+       * Beans are created, configured and managed by Spring, not by you manually.
+       * You can define beans in three ways :
+          1) Using @Component (or stereotypes like @Service, @repository, @controller).
+          2) Using @Bean inside a @Configuration class.
+          3) Using XML configuration (old style).
 
 
 
