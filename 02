@@ -161,6 +161,8 @@
 
 6) @Component
         * @Component is a Spring annotation that marks a class as a Spring-managed bean.
+             * A Spring Bean in just a regular java class that is managed by Spring.
+        * @Component also makes the bean available for DI (Dependency Injection).
         * When you annotate a class with @Component, Spring's component scanning automatically
           detects it and creates an instance of that class in the ApplicationContext.
         * @Component tells Spring: "Please create and manage this object as a bean."
