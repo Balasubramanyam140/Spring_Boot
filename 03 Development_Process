@@ -1,0 +1,44 @@
+1) Development Provess 
+           
+
+1)   Development Provess 
+     ===================
+         Step 1 : Define he dependency interfact and class :-
+                  --------------------------------------------
+                     1) Define the dependency interface and class
+                     2) Create Demo Rest Controller
+                     3) Create a constructor in your class for injections
+                     4) Add @GetMapping for /dailyworkout
+                  EX :-
+                  ----
+                     
+                     Coach.java                                           CricketCoach.java
+                   -------------------------------------------------      -----------------------------------------------------------------
+                   |  public interface Coach {                      |     | import org.springframework.stereotype.Component;              |
+                   |                                                |     |                                                               |
+                   |       String getdailyWorkout();                |     | @Component                                                    |
+                   |  }                                             |     | public class CricketCoach implements Coach {                  |
+                   --------------------------------------------------     |                                                               |
+                                                                          |        @Override                                              |
+                                                                          |        public String getDailyWorkout(){                       |
+                                                                          |              return "Practise fast bowling for !5 mins";      |
+                                                                          |        }                                                      |
+                                                                          | }                                                             |
+                                                                          -----------------------------------------------------------------
+             
+          Step 2 :- Create Demo REST Controller
+                    ---------------------------
+                  Ex:-
+                        DemoController.java
+                       -----------------------------------------------------------------------
+                      | import org.springframework.web.bind.annotation.RestController;        |
+                      |                                                                       |
+                      | @RestController                                                       |
+                      | public class DemoController{                                          |
+                      |                                                                       |
+                      | }                                                                     |
+                       -----------------------------------------------------------------------
+
+
+
+
