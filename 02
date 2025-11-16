@@ -1,7 +1,9 @@
 1) IOC
 2) Spring Container
 3) Dependency Injection
-4) OPtional Dependencies
+4) AutoWiring
+5) OPtional Dependencies
+
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
        that shifts the responsibility of creating and managing objects from the application code 
@@ -103,7 +105,29 @@
                             ----------------------------------------------------
 
 
-4) Optional Dependencies
+4) AutoWiring
+       Autowiring is a Spring feature that automaticaaly injects bean dependencies by matching types
+       (or qualifiers) instead of manually wiring then in XML or java configuration. It reduces boilerplate
+       code and makes dependency management easier. 
+
+                                   or
+
+       Autowiring in Spring is a feature that allows the framework to automatically resolve and inject
+       dependencies into a bean without explicitly specifying them in configuration. It uses the type
+       (and someties qualifiers) to match the required dependency.
+
+       * For dependency injection (DI), spring can use autowiring
+
+                            ------------------------------------------------------------------------------------------
+                            |       @Component                                                                        |
+                            |       public class Car {                                                                |
+                            |              @Autowired                                                                 |
+                            |              private Engine engine; //Spring injects Engine bean automatically          |
+                            |       }                                                                                 |
+                            --------------------------------------------------------------------------------------------
+
+
+5) Optional Dependencies
          An Optional dependency is a dependency that your class can work without. If it's not
          provided by DI container, the class still functions by using a default behvaiour or 
          skipping that feature.
