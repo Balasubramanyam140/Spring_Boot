@@ -79,30 +79,6 @@
                             |       }                                          |
                             ----------------------------------------------------
 
-              Development Provess 
-              ===================
-                     1) Define the dependency interface and class
-                     2) Create Demo Rest Controller
-                     3) Create a constructor in your class for injections
-                     4) Add @GetMapping for /dailyworkout
-
-                     Coach.java                                           CricketCoach.java
-                   -------------------------------------------------      -----------------------------------------------------------------
-                   |  public interface Coach {                      |     | import org.springframework.stereotype.Component;              |
-                   |                                                |     |                                                               |
-                   |       String getdailyWorkout();                |     | @Component                                                    |
-                   |  }                                             |     | public class CricketCoach implements Coach {                  |
-                   --------------------------------------------------     |                                                               |
-                                                                          |        @Override                                              |
-                                                                          |        public String getDailyWorkout(){                       |
-                                                                          |              return "Practise fast bowling for !5 mins";      |
-                                                                          |        }                                                      |
-                                                                          | }                                                             |
-                                                                          -----------------------------------------------------------------
-               EX :-
-              ----
-                     
-
         --> 2) Setter Injection
                ----------------
                      * Use this when you have optional dependencies.
