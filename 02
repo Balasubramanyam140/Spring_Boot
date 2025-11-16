@@ -118,13 +118,13 @@
 
        * For dependency injection (DI), spring can use autowiring
 
-                            ------------------------------------------------------------------------------------------
-                            |       @Component                                                                        |
-                            |       public class Car {                                                                |
-                            |              @Autowired                                                                 |
-                            |              private Engine engine; //Spring injects Engine bean automatically          |
-                            |       }                                                                                 |
-                            --------------------------------------------------------------------------------------------
+                ------------------------------------------------------------------------------------------
+                |       @Component                                                                        |
+                |       public class Car {                                                                |
+                |              @Autowired                                                                 |
+                |              private Engine engine; //Spring injects Engine bean automatically          |
+                |       }                                                                                 |
+                --------------------------------------------------------------------------------------------
 
 
 5) Optional Dependencies
