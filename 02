@@ -6,7 +6,8 @@
 6) @Component
 7) Bean
 8) @RestController
-
+9) @SpringBootApplication
+10) @ComponentScan
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
        that shifts the responsibility of creating and managing objects from the application code 
@@ -166,8 +167,24 @@
          where every method returns data directly (usually JSON or XML) instead of rendering a view.
 
 
+9) @SpringBootApplication
+       @SpringBootApplication annotation is a meta-annotation that combines the following 3 annotations : -
+              1) @SpringBootConfiguration 
+                     * marks the class as a soruce of bean definitions.
+              2) @EnableAutoConfiguration 
+                     * Enables Spring Boot's auto-configuration support.
+                      * Tells Spring Boot to automaticaaly configure beans based on classpath and dependencies.
+              3) @ComponentScan 
+                     * enables scanning for components in the specified package.
 
 
+10) @ComponentScan
+        * By default, Boot starts component Scanning.
+            - From same package as your main Spring Boot application.
+            - Also scans sub-packages recursively.
+        * This implicitly deines a base search package
+            - Allows you to leverage default component scanning.
+            - No need to explicitly referenve the base package name.
 
 
 
