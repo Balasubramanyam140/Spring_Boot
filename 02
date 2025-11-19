@@ -177,7 +177,27 @@
               3) @ComponentScan 
                      * enables scanning for components in the specified package.
 
+                                                 or 
+       When we use a different package then our project dont know what's that file and it cant read
+       if we write code inside it. for this we will use @SpringBootApplication and inside we will
+       say to scanBasePackages and we will include remaining packages which are different
 
+       Ex :-
+              we have multiplie packages
+                - com.example.coredemo
+                - com.example.coredemo.common
+                - com.example.coredemo.rest
+                - com.example.util
+              now if we run our main class dont know what com.example.util as it is different to include and scan this
+               we use in main class file
+              
+              ---------------------------------------------------------------
+             |    @SpringBootApplication(                                   |
+             |               scanBasePackages = ("com.example.coredemo",    |
+             |                                    "com.example.util")       |
+             |    )                                                         | 
+              ---------------------------------------------------------------
+       
 10) @ComponentScan
         * By default, Boot starts component Scanning.
             - From same package as your main Spring Boot application.
