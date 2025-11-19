@@ -8,6 +8,11 @@
 8) @RestController
 9) @SpringBootApplication
 10) @ComponentScan
+11) Setter Injection
+
+
+
+
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
        that shifts the responsibility of creating and managing objects from the application code 
@@ -208,6 +213,9 @@
             - No need to explicitly referenve the base package name.
 
 
+11) Setter Injection
+       * Setter injection just inject dependencies by calling setter methods on your class.
+ 
 
 
 
