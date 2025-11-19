@@ -178,6 +178,7 @@
                      * enables scanning for components in the specified package.
 
                                                  or 
+       Like this also @SpringBootApplications helps to include package :-
        When we use a different package then our project dont know what's that file and it cant read
        if we write code inside it. for this we will use @SpringBootApplication and inside we will
        say to scanBasePackages and we will include remaining packages which are different
