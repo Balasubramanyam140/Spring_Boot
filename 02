@@ -8,7 +8,7 @@
 8) @RestController
 9) @SpringBootApplication
 10) @ComponentScan
-11) Setter Injection
+11) Setter Injection & Development Process - Setter Injection
 
 
 
@@ -213,9 +213,12 @@
             - No need to explicitly referenve the base package name.
 
 
-11) Setter Injection
+11) Setter Injection & Development Process - Setter Injection
        * Setter injection just inject dependencies by calling setter methods on your class.
- 
-
+        
+              Development Process
+              -------------------
+                   1) Create setter method(s) in your class for injections.
+                   2) Configure the dependency injection with @Autowired Annotation. 
 
 
