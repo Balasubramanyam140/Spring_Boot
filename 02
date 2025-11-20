@@ -9,7 +9,7 @@
 9) @SpringBootApplication
 10) @ComponentScan
 11) Setter Injection & Development Process - Setter Injection
-
+12) Qualifiers
 
 
 
@@ -274,3 +274,128 @@
                  | demoController.setCoach(theCoach);                         |
                  ------------------------------------------------------------
                     this how setter injection works there.
+
+12) Qualifiers
+		 @Qualifiers is an annotation used to resolve ambiguity when mutiple beans of the same type exist
+		  in the application context. It helps Spring know which specific bean to inject when there
+	      are multiple candidates.
+
+		Why do we need @Qualifier ?
+				* When you use @Autowired for DI, Spring looks for bean of the required type.
+				* If there are mutiple beans of same type, spring cannot decide which one to inject
+				   and throws an error.
+				* @Qualifier allows you to specify which bean should be injected.
+
+
+
+			EX :-
+					CricketCoach.java
+                 ------------------------------------------------------------
+                 | @Component                                                |
+                 | public class CrickectCoach implements Coach {             |
+                 |        @Override                                          |
+                 |        public String getdailyworkout() {                  |
+                 |               return "PRactise fast bowling !!";          |
+                 |        }                                                  |
+                 | }                                                         |
+                  ------------------------------------------------------------
+					
+					BaseballCoach.java
+                 ------------------------------------------------------------
+                 | @Component                                                |
+                 | public class BaseballCoach implements Coach {             |
+                 |        @Override                                          |
+                 |        public String getdailyworkout() {                  |
+                 |               return "Spend 30 mins !!";        		     |
+                 |        }                                                  |
+                 | }                                                         |
+                  ------------------------------------------------------------
+
+					TrackCoach.java
+                 ------------------------------------------------------------
+                 | @Component                                                |
+                 | public class TrackCoach implements Coach {                |
+                 |        @Override                                          |
+                 |        public String getdailyworkout() {                  |
+                 |               return "Run a hard 5k !!";         	     |
+                 |        }                                                  |
+                 | }                                                         |
+                  ------------------------------------------------------------
+
+					TennisCoach.java
+                 ------------------------------------------------------------
+                 | @Component                                                |
+                 | public class TennisCoach implements Coach {               |
+                 |        @Override                                          |
+                 |        public String getdailyworkout() {                  |
+                 |               return "Practise your backhead volley !!";  |
+                 |        }                                                  |
+                 | }                                                         |
+                  ------------------------------------------------------------
+
+					If we run it with will so an ambiguity (problem) that shows that Parameter 0 of 
+					constructor in com.example.springcoredemo.rest.DemoController required 
+					a single bean, but 4 were found :
+						- baseballCoach
+						- cricketCoach
+						- tennisCoach
+						- tractCoach
+
+					Sol : Be specific! - @Qualifier
+						----------------------------------------------------------------------------
+						| @RestCOntroller															|
+						| public class DemoController {												|
+						| 		private Coach myCoach;											  	|
+						|																			|
+						|		@Autowired															|
+						|		public DemoController(@Qualifier("cricketCoach") Coach theCoach){	|
+						|				myCoach = theCoach;											|
+						|		}																	|
+						|																			|
+						|		@GetMapping("/dailuworkout")										|
+						|		public String getDailyWorkout(){									|
+						|				return myCoach.getDailyWorkout();							|
+						|		}																	|
+						| }																			|
+						-----------------------------------------------------------------------------
+						     * Sprcify the bean id: cricketCoach 
+							 * Same name as class, first character lower-case
+			
+						-----------------------------------------------------------------------------
+						| @RestCOntroller
+						| public class DemoController {
+						| 		private Coach myCoach;											  	|
+						|
+						|
+						|
+						|
+						|
+						|
+						|
+						|
+						|
+						|
+						|
+						|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
