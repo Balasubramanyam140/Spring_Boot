@@ -264,6 +264,9 @@
                  ------------------------------------------------------------
 
             Spring Framework how its working here:
+                     //SEtter-injection and here setCoach is just a name 
+                        can keep into anything which we want
+	
                  ------------------------------------------------------------
                  | Coach theCoach = new CricketCoach();                       |
                  | DemoController demoController = new DemoController();      |
