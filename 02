@@ -262,3 +262,11 @@
                  |  ...                                                     |
                  | }                                                        |
                  ------------------------------------------------------------
+
+            Spring Framework how its working here:
+                 ------------------------------------------------------------
+                 | Coach theCoach = new CricketCoach();                       |
+                 | DemoController demoController = new DemoController();      |
+                 | demoController.setCoach(theCoach);                         |
+                 ------------------------------------------------------------
+                    this how setter injection works there.
