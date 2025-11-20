@@ -287,7 +287,6 @@
 				* @Qualifier allows you to specify which bean should be injected.
 
 
-
 			EX :-
 					CricketCoach.java
                  ------------------------------------------------------------
@@ -341,6 +340,8 @@
 						- tennisCoach
 						- tractCoach
 
+			 			 Using Constructor Injection 
+						-----------------------------
 					Sol : Be specific! - @Qualifier
 						----------------------------------------------------------------------------
 						| @RestCOntroller															|
@@ -360,7 +361,33 @@
 						-----------------------------------------------------------------------------
 						     * Sprcify the bean id: cricketCoach 
 							 * Same name as class, first character lower-case
-			
+
+						For Setter Injection
+						---------------------
+						* If you are using Setter injection, can also apply @Qualifier annotation
+						----------------------------------------------------------------------------
+						| @RestCOntroller															|
+						| public class DemoController {												|
+						| 		private Coach myCoach;											  	|
+						|																			|
+						|		@Autowired															|
+						|		public void setCoach(@Qualifier("cricketCoach") Coach theCoach){	|
+						|				myCoach = theCoach;											|
+						|		}																	|
+						|																			|
+						|		@GetMapping("/dailuworkout")										|
+						|		public String getDailyWorkout(){									|
+						|				return myCoach.getDailyWorkout();							|
+						|		}																	|
+						| }																			|
+						-----------------------------------------------------------------------------
+
+
+
+
+
+
+
 						-----------------------------------------------------------------------------
 						| @RestCOntroller
 						| public class DemoController {
