@@ -233,3 +233,32 @@
                  |  ...                                                     |
                  | }                                                        |
                  ------------------------------------------------------------
+       How Spring Processes your application
+       -------------------------------------
+               Coach.java
+                 ------------------------------------------------------------
+                 | public interface Coach{
+                 |        String getDailyWorkout();                         |
+                 | }                                                        |
+                 ------------------------------------------------------------
+                  CricketCoach.java
+                 ------------------------------------------------------------
+                 | @Component                                                |
+                 | public class CrickectCoach implements Coach {             |
+                 |        @Override                                          |
+                 |        public String getdailyworkout() {                  |
+                 |               return "PRactise fast bowling !!";          |
+                 |        }                                                  |
+                 | }                                                         |
+                  ------------------------------------------------------------
+                     DemoController.java
+                 ------------------------------------------------------------
+                 |  @RestController                                         | 
+                 | public class DemoController {                            |
+                 |        private Coach myCoach;                            |
+                 |        public void setCoach(Coach theCoach) {            |
+                 |              myCoach = theCoach;                         |
+                 |       }                                                  |
+                 |  ...                                                     |
+                 | }                                                        |
+                 ------------------------------------------------------------
