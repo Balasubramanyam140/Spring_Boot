@@ -285,6 +285,7 @@
 				* If there are mutiple beans of same type, spring cannot decide which one to inject
 				   and throws an error.
 				* @Qualifier allows you to specify which bean should be injected.
+				* @Qualifiers have high priority than @primary.
 
 
 			EX :-
