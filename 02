@@ -10,7 +10,7 @@
 10) @ComponentScan
 11) Setter Injection & Development Process - Setter Injection
 12) Qualifiers
-
+13) @Primary
 
 
 1) IOC  ( Inversion of Control )
@@ -382,36 +382,46 @@
 						| }																			|
 						-----------------------------------------------------------------------------
 
+13) @Primary
+			In SpringBoot, @Primary is an annotation used to resolve ambiguity when multiple beans
+			of the same type exist in the application context. It tells Spring which bean should be 
+			given preference during dependency injection.
 
 
+						-----------------------------------------------------------------
+						| @Component													|
+						| @Primary														|
+						| public class TrackCoach implements Coach {					|
+						| 		@Override											  	|
+						|		public String getdailyWorkout(){						|
+						|			return "Run a hard 5k";								|
+						|		}														|
+						| }																|
+						-----------------------------------------------------------------
 
 
+						-----------------------------------------------------------------
+						| @Component
+						| public class BaseballCoach implements Coach {
+						|		....
+						| }
+						-----------------------------------------------------------------
 
+						-----------------------------------------------------------------
+						| @Component
+						| public class TennisCoach implements Coach {
+						|		....
+						| }
+						-----------------------------------------------------------------
 
-						-----------------------------------------------------------------------------
-						| @RestCOntroller
-						| public class DemoController {
-						| 		private Coach myCoach;											  	|
-						|
-						|
-						|
-						|
-						|
-						|
-						|
-						|
-						|
-						|
-						|
-						|
+						-----------------------------------------------------------------
+						| @Component
+						| public class CricketCoach implements Coach {
+						|		....
+						| }
+						-----------------------------------------------------------------
 
-
-
-
-
-
-
-
+	
 
 
 
