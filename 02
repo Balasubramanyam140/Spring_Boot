@@ -11,6 +11,7 @@
 11) Setter Injection & Development Process - Setter Injection
 12) Qualifiers
 13) @Primary
+14) Lazy Intialization
 
 
 1) IOC  ( Inversion of Control )
@@ -422,8 +423,25 @@
 						| }
 						-----------------------------------------------------------------
 
-	
 
+
+14) @Lazy ( Lazy Intialization )
+		Lazy intialization means that a bean is not created at application startup, but only when it 
+		is first requested( injected or accessed). This is useful when :
+			* The bean is expensive to create.
+			* It might not be needed during the application's lifetime.
+			* You want to reduce startup time.
+	
+						-----------------------------------------------------------------------------------------
+						| @Component																			|	
+						| @Lazt																					|
+						| public class TrackCoach implements Coach {											|
+						| 																						|
+						|		public TrackCoach() {															|
+						|				System.out.println("In constructor : " + getClass().getSimpleName());	|
+						| 		}                                                                           	|
+						| }																						|
+						-----------------------------------------------------------------------------------------
 
 
 
