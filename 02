@@ -516,7 +516,15 @@
 							In constructor: DemoController
 							...
 
-
+			--> Advantages
+				----------
+						* Only create objects as needed
+						* May help with faster startup time if you have large number of components.
+			--> Disadvantages
+				-------------
+						* If you have web related components like @RestController, not created until requested
+						* May not discover configuration issues until too late
+						* Need to make sure you have enough memory for all beans once created
 
 
 
