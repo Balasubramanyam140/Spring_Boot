@@ -12,7 +12,7 @@
 12) Qualifiers
 13) @Primary
 14) Lazy Intialization
-
+15) Add println to DempController constructor
 
 1) IOC  ( Inversion of Control )
        IOC is a design principle in software engineering, especially in frameworks like Spring,
@@ -477,6 +477,46 @@
 
 
 
+15) Add println to DempController constructor
+						-----------------------------------------------------------------------------------------
+						| @Componeny 																			|
+						| public class CricketCoach implements Coach {											|
+						| 																						|
+						| 		public CricketCoach() {															|
+						| 				System.out.println(" In constructor: " + getClass().getSimpleName());	|
+						| 		}																				|
+						| 	....																				|
+						| }																						|
+						-----------------------------------------------------------------------------------------
+						
+						-----------------------------------------------------------------------------------------
+						| @RestController																		|
+						| public class DemoController {															|
+						| 																						|
+						| 		private Coach myCoach;															|
+						|																						|
+						| 		@Autowired																		|
+						| 		public DemoController(@Qualifier("cricketCoach") Coach theCoach){				|
+						| 			System.out.println("In constructor: " + getClass().getSimpleName());		|
+						| 			myCoach = theCoach;															|
+						| 		}																				|
+						|  		...																				|
+						| }																						|
+						-----------------------------------------------------------------------------------------
+						
+						
+						
+						
 
 
 
+
+
+
+
+
+
+
+
+
+\
