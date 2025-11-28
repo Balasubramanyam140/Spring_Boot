@@ -431,7 +431,7 @@
 			* The bean is expensive to create.
 			* It might not be needed during the application's lifetime.
 			* You want to reduce startup time.
-	
+		
 						-----------------------------------------------------------------------------------------
 						| @Component																			|	
 						| @Lazt																					|
@@ -456,11 +456,24 @@
 						| }																			|
 						-----------------------------------------------------------------------------
 						
+					The output will be 
+								In constructor: BaseballCoach
+								In constructor: CircketCoach
+								In constructor: TennisCoach
 
-
-
-
-
+					Since we are NOT injecting TrackCoach ... it is not intialized 
+					So basically we are saying " Hey, don't create me unless i'm actually needed.
+						I don't wanna simply stand around and do nothing. "
+			
+			Lazy Intialization :
+			--------------------
+					* To configure other beans for Lazy initialization
+						* We would need to add @Lazy to each class
+					* Turns into tedioys work for a large number of classses
+					* I wish we could set a global configuration property ...
+						------------------------------------------------
+						| 	spring.main.lazy-intialization=true			|
+						------------------------------------------------
 
 
 
