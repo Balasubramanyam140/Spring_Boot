@@ -471,6 +471,7 @@
 						* We would need to add @Lazy to each class
 					* Turns into tedioys work for a large number of classses
 					* I wish we could set a global configuration property ...
+						application.properties :-
 						------------------------------------------------
 						| 	spring.main.lazy-intialization=true			|
 						------------------------------------------------
