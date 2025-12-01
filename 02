@@ -475,8 +475,9 @@
 						------------------------------------------------
 						| 	spring.main.lazy-intialization=true			|
 						------------------------------------------------
-
-
+					The output will null, because All beans are lazy ..
+					be no beans created until needed.
+								
 
 15) Add println to DempController constructor
 						-----------------------------------------------------------------------------------------
