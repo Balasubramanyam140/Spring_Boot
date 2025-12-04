@@ -1,14 +1,18 @@
-01) Bean Scopes
-02) Singleton
+01) Bean
+02) Bean Scopes
+03) Singleton
 
 
-01) Bean Scopes
+01) Bean
+         In Spring, a bean is simply an object that is managed by Spring IOC container.(Inversion of Control)
+
+02) Bean Scopes
           * Scope refers to the lifecycle of a bean.
           * Default scope is a singleton
 
 
 
-02) Singleton
+03) Singleton
           * Spring Container creates only one instance of the bean, by default. (one instance means one object)
           * It is cached in memory.
           * All dependency injections for the bean.
