@@ -9,6 +9,6 @@
 
 
 02) Singleton
-          * Spring Container creates only one instance of the bean, by default.
+          * Spring Container creates only one instance of the bean, by default. (one instance means one object)
           * It is cached in memory.
           * All dependency injections for the bean.
