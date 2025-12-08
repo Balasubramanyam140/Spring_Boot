@@ -24,6 +24,7 @@
 
 
 04) prototype
+         * Create a new one for each instance.
          * New instance each time it's requested/injected
          * Good for stateful helpers that shouldn't be shared.
          * Lifecycle : Spring calls @PostConstruct but doesn't manage destruction (@PreDestroy won't be called).
