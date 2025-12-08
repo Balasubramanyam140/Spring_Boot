@@ -1,7 +1,7 @@
 01) Bean
 02) Bean Scopes
 03) Singleton
-
+04) prototype
 
 01) Bean
          In Spring, a bean is simply an object that is managed by Spring IOC container.(Inversion of Control)
@@ -16,3 +16,19 @@
           * Spring Container creates only one instance of the bean, by default. (one instance means one object)
           * It is cached in memory.
           * All dependency injections for the bean.
+                  --------------------------------------------------------------
+                  | @Component                                                 |
+                  | @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)            |
+                  | public class MyService() { }                               |
+                  --------------------------------------------------------------
+
+
+04) prototype
+         * New instance each time it's requested/injected
+         * Good for stateful helpers that shouldn't be shared.
+         * Lifecycle : Spring calls @PostConstruct but doesn't manage destruction (@PreDestroy won't be called).
+                  -----------------------------------------------------------------
+                  | @Compontent                                                   |
+                  | @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)               |
+                  | public class TaskContext { }                                  |
+                  -----------------------------------------------------------------
