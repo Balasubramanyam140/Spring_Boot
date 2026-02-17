@@ -76,6 +76,10 @@
 
 
 5) SpringBoot Actuator
+          
+        * Spring Boot Actuator is a built‑in tool in Spring Boot that provides ready‑made endpoints to monitor and manage your application while it is running.
+          Think of it like health check + performance monitor + app info dashboard for your Spring Boot project.
+                                             or
           Spring Boot Actuator is a powerful feature in Spring Boot that provides production-ready tools 
           to help your monitor and manage your application. 
         * It exposes various REST endpoints that give insights into the application's health, metrics,
