@@ -6,7 +6,10 @@
 6) SpringBoot Security
 7) @Value()
 8) Context Path
+9) JPA
 10) EntityManager
+
+
 1) What is Spring Boot?
       *   Spring Boot is an open-source Java framework used to 
           create a Micro Service. 
@@ -231,6 +234,9 @@
                          ------------------------------------------------------
 
 
+9) JPA - ( JAVA Persistence API )
+      * It is a specification (set of rules) in Java that defines how to work with DB using Java Objects, instead of writing SQL manually.
+     * JPA allows you to Save, Delete, Update and Fetch Java objects from a DB without writing SQL queries.
 
 
 10) EntityManager
