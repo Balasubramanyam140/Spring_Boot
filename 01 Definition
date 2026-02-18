@@ -6,7 +6,7 @@
 6) SpringBoot Security
 7) @Value()
 8) Context Path
-
+10) EntityManager
 1) What is Spring Boot?
       *   Spring Boot is an open-source Java framework used to 
           create a Micro Service. 
@@ -231,6 +231,13 @@
                          ------------------------------------------------------
 
 
+
+
+10) EntityManager
+          It’s the JPA interface used to interact with the database: save, update, delete, and query entities.
+                    -------------------------------------------------
+                    |      private EntityManager entityManager;     |
+                    -------------------------------------------------
 
 
 
