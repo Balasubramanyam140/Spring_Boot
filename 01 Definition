@@ -8,7 +8,7 @@
 8) Context Path
 9) JPA
 10) EntityManager
-
+11) @PathVariable
 
 1) What is Spring Boot?
       *   Spring Boot is an open-source Java framework used to 
@@ -246,9 +246,25 @@
                     -------------------------------------------------
 
 
+11) @PathVariable
+          What it is:
+               An annotation you put on a controller method parameter to bind a value from the URL path to that parameter.
+          Why it’s used:
+               When your endpoint has dynamic segments (like /users/42), @PathVariable lets you read those values directly in your method.
 
-
-
+          Ex:
+                 -------------------------------------------------------------------       
+                |    @RestController                                                  |
+                |    @RequestMapping("/users")                                        |
+                |    public class UserController {                                    |     
+                |                                                                     |
+                |        // GET /users/42                                             |
+                |        @GetMapping("/{id}")                                         |
+                |        public String getUserById(@PathVariable Long id) {           |
+                |            return "User id = " + id;                                |
+                |        }                                                            |
+                |    }                                                                |
+                 -------------------------------------------------------------------
 
 
 
