@@ -9,6 +9,7 @@
 9) JPA
 10) EntityManager
 11) @PathVariable
+12) ResponseEntity
 
 1) What is Spring Boot?
       *   Spring Boot is an open-source Java framework used to 
@@ -267,7 +268,22 @@
                  -------------------------------------------------------------------
 
 
+12) ResponseEntity
+          ResponseEntity is a class in the Spring Framework that represents the entire HTTP response, allowing developers to control every 
+          aspect of the data sent back to the client.
+        * It is part of the org.springframework.http package.
 
+     Response Status :
+           -----------------------------------------------------------------------------------
+           |    return ResponseEntity.ok(body);                        // 200 OK               |
+           |    return ResponseEntity.ok().header("X-Foo","bar").body(body);                   |
+           |    return ResponseEntity.created(locationUri).body(body); // 201 Created          |
+           |    return ResponseEntity.noContent().build();             // 204 No Content       |
+           |    return ResponseEntity.notFound().build();              // 404 Not Found        |
+           |    return ResponseEntity.badRequest().body(errorObject);  // 400 Bad Request      |
+           |    return ResponseEntity.status(HttpStatus.FORBIDDEN).build(); // 403             |
+           |    return ResponseEntity.of(optionalUser);                // 200 or 404           |
+           -----------------------------------------------------------------------------------
 
 
 
