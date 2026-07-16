@@ -1,6 +1,7 @@
 1) IOC
 2) Spring Container
 3) Dependency Injection
+3.1) Why Dependency Injection is Needed
 4) OPtional Dependencies
 5) AutoWiring - @Autowired
 6) @Component
@@ -112,6 +113,23 @@
                             |              private Engine engine;              |
                             |       }                                          |
                             ----------------------------------------------------
+
+3.1) Why Dependency Injection is Needed
+		Dependency Injection is necessary because directly creating dependencies inside classes can lead to several problems:
+		1. Tight Coupling
+			Classes that create their own dependencies are tightly coupled to specific implementations.
+			Changes in one class may break dependent classes.
+		2. Reduced Testability
+			Directly created dependencies make unit testing difficult.
+			DI allows injecting mock objects for testing individual components.
+		3. Poor Maintainability
+			Updating or replacing a dependency requires changes in multiple classes.
+			DI centralizes dependency management in the Spring container, simplifying maintenance.
+		4. Lack of Flexibility and Reusability			
+			Classes cannot easily switch to alternative implementations of a dependency.
+			DI allows using interfaces or multiple implementations without modifying the dependent class.
+		5. Centralized Object Management	
+			Spring IoC container handles object creation, configuration, and lifecycle, reducing boilerplate code and ensuring consistency across the application
 
 4) Optional Dependencies
          An Optional dependency is a dependency that your class can work without. If it's not
