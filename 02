@@ -131,6 +131,10 @@
 		5. Centralized Object Management	
 			Spring IoC container handles object creation, configuration, and lifecycle, reducing boilerplate code and ensuring consistency across the application
 
+												or
+		Dependency Injection allows Spring to create and inject dependent objects automatically. 
+		It helps achieve loose coupling, improves code maintainability, reusability, and makes unit testing easier.
+
 4) Optional Dependencies
          An Optional dependency is a dependency that your class can work without. If it's not
          provided by DI container, the class still functions by using a default behvaiour or 
