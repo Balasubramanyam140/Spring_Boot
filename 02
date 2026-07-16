@@ -1,7 +1,7 @@
 1) IOC
 2) Spring Container
-3) Dependency Injection
-3.1) Why Dependency Injection is Needed
+3) Dependency Injection   -  https://www.geeksforgeeks.org/advance-java/spring-dependency-injection-with-example/
+3.1) Why Dependency Injection is Needed   -  https://www.geeksforgeeks.org/advance-java/spring-dependency-injection-with-example/
 4) OPtional Dependencies
 5) AutoWiring - @Autowired
 6) @Component
