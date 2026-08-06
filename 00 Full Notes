@@ -1,0 +1,60 @@
+1) Understanding versioning(semantic Versioning)
+2) Types of API request
+3) What is REST API and its Architecture ?
+
+1) Understanding versioning(semantic Versioning)
+      Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
+      * MAJOR: Lot of work to upgrade ( 10.0.0 to 11.0.0)
+      * MINOR: Little to no work to upgrade (10.1.0 to 1.2.0)
+      * PATCH: Bug fixes only (10.5.4 to 10.5.5)
+      * MODIFIERs:
+            - SNAPSHOT: Usage in development(e.g., 10.0.0-SNAPSHOT) - Unstable
+            - M1/M2/RC1: Milestones/Release Candidates
+            - Release: Production ready content
+
+    Tip : Avoid SNAPSHOTs in production!
+
+2) Types of API request
+      1) GET Request
+      2) POST Request
+      3) PUT Request
+      4) DELETE Request
+
+      1) GET Request
+         ----------
+            - Retrieve or GET resources from server
+            - Used only to Read data
+
+      2) POST Request
+         ------------
+            - Create resources from server
+
+      3) PUT Request
+         -----------
+            - Update existing resource on server
+
+      4) DELETE Request
+         --------------
+            - Used to DELETE resources from server
+
+3) What is REST API and its Architecture ?
+      REST API, stands for Representational State Transfer Application Programming Interface
+      - REST is stateless ( THe server doesnt remember previous requests from the client. Every request must contain all
+        the info needed to process it.)
+
+   Principles of REST API
+   ----------------------
+      - Client-server Architecture
+      - Stateless
+      - Can be cached
+      - Opacque in terms of layers
+      - Uniform interface (all the end points that are designed are uniform in nature)
+
+   Web Services built following the REST architectural style are known as RESTFUL web services
+
+   Benefits
+   --------
+      - Simplicity ( working on http protocals makes REST API simple to use and implement )
+      - Scalability ( since they are stateless in nature means they can scale large number of requests )
+      - Flexibility ( Data is not tied to resources or methods which allows for more flexibility in how data is returned )
+      - Visibility ( Communication btw client and server is done using standard http methods )
