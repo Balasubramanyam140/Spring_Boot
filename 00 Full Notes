@@ -1,6 +1,8 @@
 1) Understanding versioning(semantic Versioning)
 2) Types of API request
 3) What is REST API and its Architecture ?
+4) http VS https
+5) Status Codes in API
 
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
@@ -58,3 +60,20 @@
       - Scalability ( since they are stateless in nature means they can scale large number of requests )
       - Flexibility ( Data is not tied to resources or methods which allows for more flexibility in how data is returned )
       - Visibility ( Communication btw client and server is done using standard http methods )
+
+
+4) http VS https
+      1) Both of these are protocals that are used for transmitting infomation over the internet ( across the world wide web) .
+      2) They operate based on a client-server model, where a client( web browser ) sends a req to the server hosting a website.
+      3) Both protocols use similar methods to perform actions on the web server as well as status codes
+      4) HTTP and HTTPS are both stateless protocols, meaning they dont inherently remember anything about the previous web session
+      5) Both HTTP and HTTPs can transfer data in various formats including HTML, XML, JSON and plain text
+
+    -  http stands for Hper Text Transfer Protocol
+    -  https stands for Hper Text Transfer Protocal Secure  
+      
+      HTTPS is essentially HTTP with security ( The info that is transmitted using https is more secure and integrity of 
+      the info is well mainrained in HTTPS )
+
+5) Status Codes in API
+      
