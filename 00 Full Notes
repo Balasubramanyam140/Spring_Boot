@@ -117,6 +117,13 @@
                   such as HTTP or HTTPS.
             - URIs are a broad category that include both URLs ( Uniform Resource Locators ) and URNs ( Uniform resource Names ).
 
+      Sub-Resource
+      ------------
+            - A Sub-Resource is a resource that is hierarchically under another resource.
+            - It's a part of a large resource and can be accessed by extending the URI of the parent resource.
+            - Sub-resources are often used in RESTful in APIs to maintain a logical hierarchy of data and to facilitate easy access 
+                  to related resources.
+
 
 
 
