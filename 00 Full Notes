@@ -127,6 +127,8 @@
             EX :-
                   In a blogging platform, you might have a users resource identified by a URI (/users). A specific user could be a resource
                   accessible at /users/{userId}.
+                  - If each user can have blog posts, a post would be a sub-resource of that user, identified by something 
+                        like /users/{useriId}/posts/{postId}.
 
 
 
