@@ -3,6 +3,7 @@
 3) What is REST API and its Architecture ?
 4) http VS https
 5) Status Codes in API
+6) What is Resource, URI and Sub-Resource
 
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
@@ -98,3 +99,24 @@
             - 404 Not Found
             - 500 Internal Server Error
             
+
+6) What is Resource, URI and Sub-Resource
+      Resource
+      --------
+            - A Resource is any piece of information that can be named or identified on the web.
+            - Can represent any type of object, data or service that can be accessed by clients.
+            - A Resource is not just limited to documents or files; it can be anything from a textfile, an image, a ollection 
+                  of other resources, a non-virtual object like a person, and even abstract concepts like service.
+            - In a social media application, resources could include a user profile, a photo, a list of friends, or even a 
+                  specific post or comment.
+
+      URI ( Uniform Resource Identifier )
+      ----------------------------------
+            - A URI is a string of characters used to identify a resource on the internet either by location, name or both
+            - It provides a mechanism for accessing the representation of a resource over the network, typically through specific protocols
+                  such as HTTP or HTTPS.
+            - URIs are a broad category that include both URLs ( Uniform Resource Locators ) and URNs ( Uniform resource Names ).
+
+
+
+
