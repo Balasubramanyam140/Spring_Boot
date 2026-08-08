@@ -124,6 +124,9 @@
             - Sub-resources are often used in RESTful in APIs to maintain a logical hierarchy of data and to facilitate easy access 
                   to related resources.
 
+            EX :-
+                  In a blogging platform, you might have a users resource identified by a URI (/users). A specific user could be a resource
+                  accessible at /users/{userId}.
 
 
 
