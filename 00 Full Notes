@@ -143,5 +143,43 @@
             - Websites have a lot in common
             - Security, Databases, URLs, Authentication... more
 
+      Popular Web Frameworks
+      ----------------------
+            - Spring Boot(Java)
+            - Django (Python)
+            - Flask (Python)
+            - Express (JavaScript)
+            - Ruby on rails (Ruby)
+
+8) Introduction to Spring Framework
+      - Intially developed by Rod Johnson in 2002
+      - First version released in Mar 2004
+
+      Sping simplifies enterprise application development
+            - Key Principles
+             ---------------
+                  - Simplicity
+                  - Modularity
+                  - Testability
+
+      Key Components of Spring
+      ------------------------
+            - Core Spring Framework
+            - Spring Boot
+            - Spring Data
+            - Spring Security
+            - Spring cloud
+
+      Use Cases
+      ---------
+            - Enterprise Applications
+            - Microservices Architecture
+            - Web Applications
+            
+
+
+
+
+
 
 
