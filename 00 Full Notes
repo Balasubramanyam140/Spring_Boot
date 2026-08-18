@@ -5,6 +5,7 @@
 5) Status Codes in API
 6) What is Resource, URI and Sub-Resource
 7) What is Web Framework ?
+8) Constructor injection
 
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
@@ -176,7 +177,10 @@
             - Microservices Architecture
             - Web Applications
             
-
+8) Constructor injection
+      - Dependencies are provided to the dependent class through its constructor
+      - Dependencies are passed as arguments to the constructor when the dependent class is instantiated
+      - Constructor injection ensures that the dependencies are available when the object is created
 
 
 
