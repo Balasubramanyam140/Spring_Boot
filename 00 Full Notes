@@ -9,6 +9,8 @@
 9) Constructor injection
 10) Setter Injection
 11) What is IOC
+12) DI
+
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
       * MAJOR: Lot of work to upgrade ( 10.0.0 to 11.0.0)
@@ -199,4 +201,9 @@
 
 
 11) What is IOC
-      IOC (inversion 
+      IOC (inversion of Control) is a design principle in Spring where the control of creating and managing objects is transferred
+      from the application code to the Spring IoC container.
+
+12) DI
+      Dependency Injection is atechnique where Spring Boot provides the required objects (dependencies) to a class instead of the class creating them itself.
+
