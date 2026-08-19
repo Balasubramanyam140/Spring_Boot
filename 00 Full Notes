@@ -5,7 +5,9 @@
 5) Status Codes in API
 6) What is Resource, URI and Sub-Resource
 7) What is Web Framework ?
-8) Constructor injection
+8) What are the types of Dependency Injection?
+9) Constructor injection
+10) Setter Injection
 
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
@@ -176,14 +178,24 @@
             - Enterprise Applications
             - Microservices Architecture
             - Web Applications
-            
-8) Constructor injection
+
+8) What are the types of Dependency Injection?
+      There are mainly 2 types of Dependency Injection in Spring Boot 
+      - Constructor Injection
+      - Setter Injection
+      Constructor Injection is generally prefered because dependencies are provided at object creation time and are mandatory.
+
+9) Constructor injection
+      Construcor Injection is a Dependency Injection technique in Spring Boot where dependencies are provided
+      through the constructor at the time of object creation.
+                              or
       - Dependencies are provided to the dependent class through its constructor
       - Dependencies are passed as arguments to the constructor when the dependent class is instantiated
       - Constructor injection ensures that the dependencies are available when the object is created
 
-
-
+10) Setter Injection
+      Setter injection means injecting a dependency using a setter method and the @Autowired annotation. 
+      Spring creates the object first, then calls the setter method to inject the dependency.
 
 
 
