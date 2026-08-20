@@ -10,6 +10,7 @@
 10) Setter Injection
 11) What is IOC
 12) DI
+13) Annotation
 
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
@@ -207,3 +208,6 @@
 12) DI
       Dependency Injection is atechnique where Spring Boot provides the required objects (dependencies) to a class instead of the class creating them itself.
 
+
+13) Annotation
+      An annotation is a special marker that starts with @ and gives instructions to the java compiler or spring framework.
