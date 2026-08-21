@@ -11,6 +11,7 @@
 11) What is IOC
 12) DI
 13) Annotation
+14) Understanding Components and ComponentScan
 
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
@@ -211,3 +212,40 @@
 
 13) Annotation
       An annotation is a special marker that starts with @ and gives instructions to the java compiler or spring framework.
+
+
+14) Understanding Components and ComponentScan
+      Component
+      ==========
+            Component refers to a java class that is managed by the SPring IOC container.
+            @Component is an annotation used to tell Spring that a class is a Spring Bean and should be managed by Spring IOC Container.
+            @Component is used to mark a class as a Spring-managed bean so that Spring can automatically create and manage its object.
+            Defining Components in Spring :
+            ------------------------------
+                  - USing XML
+                  - Using Annotations
+      
+                  Using XML
+                  ---------
+                        <bean id="myCompoent" class="com.example.MyComponent"/>
+       
+                  Using Annotation
+                  ----------------
+                        import org.springframework.stereotype.Component;
+      
+                        @Component //Marks the class a Spring Component
+                        public class MyComponent {
+                              //Class implementation
+                        }
+      
+      Component Scanning
+      ==================
+            - Component Scanning is a feature helps to automatically detect and register beans from predefined package paths.
+            - @componentScan is used to scan packages for Spring components and register them as beans in the Spring container.
+            - @ComponentScan is used to tell sPring where to search for classes annotated with:
+                  * @Component
+                  * @Service
+                  * @Repository
+                  * @Controller
+             After finding them, spring automatically creates beans and stores them in the IOC container.
+
