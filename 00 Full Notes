@@ -13,6 +13,7 @@
 13) Annotation
 14) Understanding Components and ComponentScan
 15) @Value Annotation
+16) @Autowired Annotation
 
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
@@ -282,3 +283,7 @@
                   @Value("${server.port:8080}")
                   private int port;
       
+
+16) @Autowired Annotation
+      - @Autowired is used for Dependency Injection (DI). It tells Spring automatically provide the required bean object.
+      - @Autowired is used to automatically inject one Spring bean into another bean.
