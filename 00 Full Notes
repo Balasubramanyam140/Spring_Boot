@@ -12,6 +12,7 @@
 12) DI
 13) Annotation
 14) Understanding Components and ComponentScan
+15) @Value Annotation
 
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
@@ -249,3 +250,35 @@
                   * @Controller
              After finding them, spring automatically creates beans and stores them in the IOC container.
 
+
+15) @Value Annotation
+      - @Value is used to inject values from properties files, environment variables, or hardcoded values into a Spring bean.
+      - @Value is used to read and inject values from application.properties or application.yml into java variables.
+
+      Ex:
+            application.properties
+                  app.name=Student Management System
+            Java class
+                  @Component
+                  public class AppInfo {
+                  
+                      @Value("${app.name}")
+                      private String appName;
+                  
+                      public void display() {
+                          System.out.println(appName);
+                      }
+                  }
+            Output :
+                  StudentManagement System
+
+            Hardcoded Value
+            ---------------
+                  @Value("Hello Spring Boot")
+                  private String message;
+
+            Default Value
+            ------------
+                  @Value("${server.port:8080}")
+                  private int port;
+      
