@@ -14,6 +14,8 @@
 14) Understanding Components and ComponentScan
 15) @Value Annotation
 16) @Autowired Annotation
+17) @Qualifier Annotation
+
 
 1) Understanding versioning(semantic Versioning)
       Format: MAJOR.MINOR.PATCH[-MODIFIER}(e.g., 10.0.1)
@@ -287,3 +289,10 @@
 16) @Autowired Annotation
       - @Autowired is used for Dependency Injection (DI). It tells Spring automatically provide the required bean object.
       - @Autowired is used to automatically inject one Spring bean into another bean.
+
+17) @Qualifier Annotation
+      - @Qualifier is used along with @Autowired to specify which bean should be injected when multiple beans of the same type are available.
+      - @Qualifier is used to resolve the ambiguity when more than one bean of the same type exists in the Spring container.
+
+
+
