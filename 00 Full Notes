@@ -17,7 +17,7 @@
 17) @Qualifier Annotation
 ------------------------------------------------------------------------
 18) What is Spring Boot?
-
+19) Features of Spring Boot?
 
 ------------------------------------------------------------------------
 
@@ -304,3 +304,43 @@
          and embedded servers, which help developers build production-ready applications quickly with minimal configuration.
 
             Spring Boot = Spring Framework + prebuilt Configuration + Embedded Servers
+
+
+19) Features of Spring Boot?
+       Spring Boot provides several features such as :
+            - Starter Dependencies
+            - Auto Configuration
+            - Embdedded Server (Tomcat)
+            - Spring Boot Actuator
+            - Spring Boot DevTools
+            - Microservices Support
+            - Less Configuration
+
+            1) Starter Dependencies
+               ----------------------
+                  - Starter Dependencies are pre-packed Maven/Gradle dependencies that contain all required libraries for a specific feature.
+                  - Starter dependencies provide a convenient way to include all required libraries for a specific functionality without manually adding each dependency.
+
+            2) Auto Configuration
+               -------------------
+                  - Spring Booot automatically configures beans based on the dependencies available in the class path.
+
+            3) Embedded Server
+               ---------------
+                  - Spring Boot comes with an embedded Tomcat, Jetty or Undertow server.
+                  - Embedded server allows spring Boot applications to run independently without deploying them to an external server.
+
+            4) Actuator
+               --------
+                  - Provides production-ready monitoring features.
+                  - Spring Boot Actuator helps monitor and manage applications through health checks, metrics and other production endpoints.
+
+            5) DevTools
+               --------
+                  - Improves developer productivity
+                  - Spring Boot DevTools automatically restarts the application when code changes are made, improving development efficiency.
+
+            6) Microservices Support
+               ----------------------
+                  - Spring Boot is widely used for building microservices
+                  - Spring Boot provides excellent support for developing lightweight and scalable microservices,
