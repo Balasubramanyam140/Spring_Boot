@@ -302,3 +302,5 @@
       - Open-source, java-based framework used to create stand-alone production-guide Spring-based Application.
       - Spring Boot is an extension of the Spring framework that simplifies Java application development. It provides auto-configuration, starter dependencies,
          and embedded servers, which help developers build production-ready applications quickly with minimal configuration.
+
+            Spring Boot = Spring Framework + prebuilt Configuration + Embedded Servers
