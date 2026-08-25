@@ -5,6 +5,8 @@
 5) Status Codes in API
 6) What is Resource, URI and Sub-Resource
 7) What is Web Framework ?
+7.1) Tight Coupling and Loose Coupling
+
 8) What are the types of Dependency Injection?
 9) Constructor injection
 10) Setter Injection
@@ -190,6 +192,9 @@
             - Enterprise Applications
             - Microservices Architecture
             - Web Applications
+
+7.1) Tight Coupling and Loose Coupling
+
 
 8) What are the types of Dependency Injection?
       There are mainly 2 types of Dependency Injection in Spring Boot 
