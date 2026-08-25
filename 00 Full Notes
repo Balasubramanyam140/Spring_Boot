@@ -168,6 +168,19 @@
             - Express (JavaScript)
             - Ruby on rails (Ruby)
 
+
+7.1) Tight Coupling and Loose Coupling
+      * Coupling refers to how closely connected different components or systems are
+
+      Tight Coupling
+      --------------
+            Tight coupling describes a scenario where software components are highly dependent on each other
+            - Class are highly dependent on each other
+            - Changes in one class affect another class
+            - Hard to maintain and test
+            - Less flexible
+            - Not recommended in modern application
+      
 8) Introduction to Spring Framework
       - Intially developed by Rod Johnson in 2002
       - First version released in Mar 2004
