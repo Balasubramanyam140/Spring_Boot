@@ -180,6 +180,24 @@
             - Hard to maintain and test
             - Less flexible
             - Not recommended in modern application
+
+      Loose Coupling
+      --------------
+            Loose coupling descibes a scenario where software components are less dependent on each other
+            - Classes are less dependent on each other 
+            - Changes in one class have minimal impact on others
+            - Easy to maintain and test
+            - More flexible
+            - Recommended in Spring Boot Application
+
+            Achieve Loose Coupling
+            ---------------------
+                  In Spring Boot, We achieve loose coupling mainly by:
+                  - Using Interfaces
+                  - Dependency Injection (DI)
+                  - Constrcutor Injection
+                  - @Autowired Annotation
+      
       
 8) Introduction to Spring Framework
       - Intially developed by Rod Johnson in 2002
