@@ -6,11 +6,12 @@
 6) What is Resource, URI and Sub-Resource
 7) What is Web Framework ?
 7.1) Tight Coupling and Loose Coupling
-
 8) What are the types of Dependency Injection?
+8.1) Bean
 9) Constructor injection
 10) Setter Injection
 11) What is IOC
+12.0) Bean
 12) DI
 13) Annotation
 14) Understanding Components and ComponentScan
@@ -224,8 +225,6 @@
             - Microservices Architecture
             - Web Applications
 
-7.1) Tight Coupling and Loose Coupling
-
 
 8) What are the types of Dependency Injection?
       There are mainly 2 types of Dependency Injection in Spring Boot 
@@ -249,6 +248,11 @@
 11) What is IOC
       IOC (inversion of Control) is a design principle in Spring where the control of creating and managing objects is transferred
       from the application code to the Spring IoC container.
+
+
+12.0) Bean
+      A Bean is an object that is created, managed and maintained by the Spring IOC COntainer.
+      - A Bean is a Java object that is instantiated, configured and managed by the Spring Ioc Container
 
 12) DI
       Dependency Injection is atechnique where Spring Boot provides the required objects (dependencies) to a class instead of the class creating them itself.
