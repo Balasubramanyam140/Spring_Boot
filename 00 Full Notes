@@ -394,4 +394,6 @@
 
 
 21) application.properties
-      application.properties is a central configuration file in spring boot used to define application settings without changing java code.
+      - application.properties is a central configuration file in spring boot used to define application settings without changing java code.
+      - application.properties is a configuration file in spring boot used to store application settings such as server port, database connection details,
+         application name, logging configuration and other properties.
