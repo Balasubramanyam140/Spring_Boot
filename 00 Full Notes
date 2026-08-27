@@ -22,6 +22,7 @@
 18) What is Spring Boot?
 19) Features of Spring Boot?
 20) @GetMapping
+21) application.properties
 
 ------------------------------------------------------------------------
 
@@ -390,3 +391,7 @@
 20) @GetMapping
       - @GetMapping is a Spring Boot annotation used to handle HTTP GET requests. It is mainly used to retrieve data from server.
       - @GetMapping is an annotation in Spring Boot that maps HTTP GET requests to a controller method. It is used to fetch or read data from the server.
+
+
+21) application.properties
+      application.properties is a central configuration file in spring boot used to define application settings without changing java code.
