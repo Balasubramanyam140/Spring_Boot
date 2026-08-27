@@ -21,6 +21,7 @@
 ------------------------------------------------------------------------
 18) What is Spring Boot?
 19) Features of Spring Boot?
+20) @GetMapping
 
 ------------------------------------------------------------------------
 
@@ -384,3 +385,8 @@
                ----------------------
                   - Spring Boot is widely used for building microservices
                   - Spring Boot provides excellent support for developing lightweight and scalable microservices,
+
+
+20) @GetMapping
+      - @GetMapping is a Spring Boot annotation used to handle HTTP GET requests. It is mainly used to retrieve data from server.
+      - @GetMapping is an annotation in Spring Boot that maps HTTP GET requests to a controller method. It is used to fetch or read data from the server.
