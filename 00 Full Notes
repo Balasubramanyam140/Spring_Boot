@@ -23,6 +23,7 @@
 19) Features of Spring Boot?
 20) @GetMapping
 21) application.properties
+22) @RestController
 
 ------------------------------------------------------------------------
 
@@ -397,3 +398,8 @@
       - application.properties is a central configuration file in spring boot used to define application settings without changing java code.
       - application.properties is a configuration file in spring boot used to store application settings such as server port, database connection details,
          application name, logging configuration and other properties.
+
+22) @RestController
+      @RestController is a Spring Boot annotation used to create RESTful web services. It is a combination of
+        @Controller and @ResponseBody, so the return value of methods is sent directly as the HTTP response, usually in JSON format.
+      
