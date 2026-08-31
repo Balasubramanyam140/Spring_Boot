@@ -26,6 +26,7 @@
 22) @RestController
 23) @PostMapping
 24) @RequestBody
+25) Postman
 
 ------------------------------------------------------------------------
 
@@ -412,3 +413,7 @@
 24) @RequestBody
       @RequestBody is a Spring Boot annotation used to bind the HTTP request body(usually JSON) to a Java object. Spring automatically converts the JSON data into the
        corresponding Java object.
+
+25) Postman
+      Postman is an API testing tool used to send HTTP requests such as GET, POST, PUT and DELETE and verify the responses received from the server.
+       It helps developers test and debug REST APIs.
