@@ -34,8 +34,8 @@
 29) Service Layer
 30) Repository Layer
 31) Entity Layer
-
 ------------------------------------------------------------------------
+32) Why do we take an interface in Service layer?
 
 ------------------------------------------------------------------------
 
@@ -459,4 +459,10 @@
 
 31) Entity Layer
       Entity layer contains the classes that represent databases tables. Each object of the entity class represents one row in the database table.
+
+--------------------------------------------------------------------------------------------------------
+
+32) Why do we take an interface in Service layer?
+      We use an interface in the Service layer to achieve loose coupling, abstraction, and easy testing. The controller depends on the interface instead 
+       on a concrete class, so we can change the implementation without changing the controller.
 
