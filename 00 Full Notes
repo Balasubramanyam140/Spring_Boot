@@ -27,6 +27,7 @@
 23) @PostMapping
 24) @RequestBody
 25) Postman
+26) How do you get JSON from a SPring Boot application?
 
 ------------------------------------------------------------------------
 
@@ -417,3 +418,12 @@
 25) Postman
       Postman is an API testing tool used to send HTTP requests such as GET, POST, PUT and DELETE and verify the responses received from the server.
        It helps developers test and debug REST APIs.
+
+
+26) How do you get JSON from a SPring Boot application?
+      1. Create an Entity/POJO class
+      2. Create an object of that class
+      3. Return the object from a method inside @RestController
+      4. Spring Boot uses Jackson to convert the Java object into JSON.
+      5. Call the API using Postman.
+      6. The JSON response is displayed in Postman.
