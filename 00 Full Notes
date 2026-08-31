@@ -24,6 +24,8 @@
 20) @GetMapping
 21) application.properties
 22) @RestController
+23) @PostMapping
+24) @RequestBody
 
 ------------------------------------------------------------------------
 
@@ -403,3 +405,10 @@
       @RestController is a Spring Boot annotation used to create RESTful web services. It is a combination of
         @Controller and @ResponseBody, so the return value of methods is sent directly as the HTTP response, usually in JSON format.
       
+23) @PostMapping
+      @PostMapping is a Spring Boot annotation used to map HTTP POST requests to a controller method. It is commonly used to create or save data received from 
+       the client. It is a short cut for @RequestMapping(method = RequestMEthod.POST)
+
+24) @RequestBody
+      @RequestBody is a Spring Boot annotation used to bind the HTTP request body(usually JSON) to a Java object. Spring automatically converts the JSON data into the
+       corresponding Java object.
