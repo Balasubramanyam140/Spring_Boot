@@ -28,6 +28,7 @@
 24) @RequestBody
 25) Postman
 26) How do you get JSON from a SPring Boot application?
+27) @PathVaribale
 
 ------------------------------------------------------------------------
 
@@ -427,3 +428,16 @@
       4. Spring Boot uses Jackson to convert the Java object into JSON.
       5. Call the API using Postman.
       6. The JSON response is displayed in Postman.
+
+27) @PathVaribale
+      @PathVariable is used to get a value from the URL path and pass it to a method parameter. It is commonly used to fetch a specific record by ID.
+            Ex:
+                  @GetMapping("/students/{id}")
+                  public String getStudent(@PathVariable int id) {
+                      return "Student Id: " + id;
+                  }
+            URL: 
+                  http://localhost:8080/students/101
+            Output:
+                  Student Id: 101
+
