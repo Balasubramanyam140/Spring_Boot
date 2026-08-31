@@ -33,6 +33,9 @@
 28) Controller Layer
 29) Service Layer
 30) Repository Layer
+31) Entity Layer
+
+------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
@@ -454,5 +457,6 @@
 30) Repository Layer ( @Repository )
       Repository Layer interacts with the database and perform CRUD operations.
 
-
+31) Entity Layer
+      Entity layer contains the classes that represent databases tables. Each object of the entity class represents one row in the database table.
 
