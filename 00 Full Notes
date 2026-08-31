@@ -29,6 +29,10 @@
 25) Postman
 26) How do you get JSON from a SPring Boot application?
 27) @PathVaribale
+------------------------------------------------------------------------
+28) Controller Layer
+29) Service Layer
+30) Repository Layer
 
 ------------------------------------------------------------------------
 
@@ -440,4 +444,15 @@
                   http://localhost:8080/students/101
             Output:
                   Student Id: 101
+
+28) Controller Layer (@RestController)
+      Controller Layer receives requests from the client ( Browser, Postman, Frontend ) and sends responses back. It acts as the entry point of the application.
+
+29) Service Layer ( @Service )
+      Service Layer contains the business logic. It processes data and calls the repository layer.
+
+30) Repository Layer ( @Repository )
+      Repository Layer interacts with the database and perform CRUD operations.
+
+
 
