@@ -483,6 +483,24 @@
 35) @RequestMapping
       @RequestMapping is a Spring Boot annotation used to map an HTTP request URL to a controller method or Controller class.
 
+      Case 1 : Instead of direct using get or post or ..etc we can use using value and method
+      ======
+            Ex : With HTTP Method 
+                  @RequestMapping(value = "/users", method = RequestMethod.GET)
+                  public String getUsers() {
+                      return "Users";
+                  }
 
-
-
+      Case 2 : /users Becomes the base URL for all methods in this controller
+      ======
+            Ex :
+                  @RestController
+                  @RequestMapping("/categories")
+                  public class CategoryController {
+                  
+                      @GetMapping("/{id}")
+                      public Category getCategory(@PathVariable Integer id) {
+                          return null;
+                      }
+                  }
+                  ``
