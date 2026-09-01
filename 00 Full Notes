@@ -38,7 +38,7 @@
 32) Why do we take an interface in Service layer?
 33) ResponseEntity
 34) Optional class
-
+35) @RequestMapping
 
 ------------------------------------------------------------------------
 
@@ -477,9 +477,11 @@
 
       ResponseEntity is a Spring Boot class used to represent the entire HTTP response. It allows us to return the response body, HTTP status code, and headers with full control.
 
-33) ResponseEntity
+34) Optional Class
       OPtional class is a class in java used to handle null values safely and avoid NullPointerException.
 
+35) @RequestMapping
+      @RequestMapping is a Spring Boot annotation used to map an HTTP request URL to a controller method or Controller class.
 
 
 
