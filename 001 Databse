@@ -1,5 +1,5 @@
 1) Data and Databases
-
+2) Persistent Data and Dynamic Data
 
 
 ----------------------------------------------------------------------
@@ -11,3 +11,14 @@
       Databases :
             A Database is an organized collection of data that can be stored, managed and retrieved easily.
             A Database is an organized collection of data that allows us to store, retieve, update, and manage information efficiently.
+
+2) Persistent Data and Dynamic Data
+      Persisent Data :
+            * Persistent data is data that is saved permanently and remains available even after the application is closed or restarted.
+            * Persistent data is permanently stored data that remains available even after the application restarts, such as data in a database.
+            Ex :
+                  Data stored in MySQL, Oracle and PostgreSQL.
+
+      Dynamic Data :
+            * Dynamic data is data that changes during program execution and is usually stored temporarily in memory (RAM).
+            * Dynamic data is temporary data created and modified during program execution and usually stored in memory.
