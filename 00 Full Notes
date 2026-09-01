@@ -36,7 +36,7 @@
 31) Entity Layer
 ------------------------------------------------------------------------
 32) Why do we take an interface in Service layer?
-
+33) ResponseEntity
 ------------------------------------------------------------------------
 
 1) Understanding versioning(semantic Versioning)
@@ -465,4 +465,19 @@
 32) Why do we take an interface in Service layer?
       We use an interface in the Service layer to achieve loose coupling, abstraction, and easy testing. The controller depends on the interface instead 
        on a concrete class, so we can change the implementation without changing the controller.
+
+33) ResponseEntity
+      ResponseEntity is a class used to send the HTTP response back to the client with full control over:
+            1. Response Body (data)
+            2. HTTP Status code (200, 201, 404, 500, etc..,)
+            3. Headers (optional)
+
+      ResponseEntity is a Spring Boot class used to represent the entire HTTP response. It allows us to return the response body, HTTP status code, and headers with full control.
+
+
+
+
+
+
+
 
