@@ -30,8 +30,13 @@
       - DBMS is a software that helps users create, store, update, delete and retieve data efficiently from a database.
 
       Ex of DBMS :-
-            - MySQL
-            - Oracle Database
-            - SQL Server
+            - MySQL ( RDBMS )
+            - Oracle Database ( RDBMS )
+            - SQL Server ( RDBMS )
             - MongoDB ( for NoSQL DB )
             - Cassandra ( for NoSQL DB )
+
+      Types of DBMS :-
+      -------------
+                  - Relaional Database MAnagement System ( RDBMS )
+                  - NoSQL Database Management System
