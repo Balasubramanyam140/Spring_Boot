@@ -1,6 +1,6 @@
 1) Data and Databases
 2) Persistent Data and Dynamic Data
-
+3) What is DBMS?
 
 ----------------------------------------------------------------------
 1) Data and Databases
@@ -22,3 +22,16 @@
       Dynamic Data :
             * Dynamic data is data that changes during program execution and is usually stored temporarily in memory (RAM).
             * Dynamic data is temporary data created and modified during program execution and usually stored in memory.
+
+
+3) What is DBMS?
+      Data Base Management System is a software that is used to store, manage, retieve and organize data in a database. It acts as a bridge between
+       the user/app and the database.
+      - DBMS is a software that helps users create, store, update, delete and retieve data efficiently from a database.
+
+      Ex of DBMS :-
+            - MySQL
+            - Oracle Database
+            - SQL Server
+            - MongoDB ( for NoSQL DB )
+            - Cassandra ( for NoSQL DB )
