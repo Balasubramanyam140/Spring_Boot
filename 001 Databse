@@ -3,6 +3,7 @@
 3) What is DBMS?
 4) What is SQL ?
 5) What is Query ?
+6) What is SQL Queries ? Types of SQL queries ?
 
 ----------------------------------------------------------------------
 1) Data and Databases
@@ -70,3 +71,14 @@
 
 5) What is Query ?
       A query is a command written in SQL to communicate with a database and perform operations on data.
+
+6) What is SQL Queries ? Types of SQL queries ?
+      Data from Database is retrieved with the help of SQL queries. 
+
+      -  Different Types of SQL Queries :-
+        -------------------------------
+            - Data Query Language [ DQL ]            - ( SELECT )
+            - Data Manipulation Language [ DML ]      - ( INSERT , UPDATE , DELETE )
+            - Data Defintion Language [ DDL ]      - ( CREATE , ALTER , DROP , TRUNCATE )
+            - Data Control Language [ DCL ]         - ( GRANT , REVOKE )
+            - Transaction Control Language [ TCL ]   - ( COMMIT , ROLLBACK , SAVEPOINT )
