@@ -18,5 +18,7 @@
 2) H2 Database
     H2 Database is a lightweight, in-memory relational database written in Java. It is commonly used in Spring Boot applications for 
      development and testing.
-    - H2 is an op[en-source, lightweight relational database that runs in memory. It is mainly used for development and testing bec it is easy
+    - H2 is an open-source, lightweight relational database that runs in memory. It is mainly used for development and testing bec it is easy
        to configure and does not require a seperate database installation.
+    - H2 is an in-memory relational database used in Spring Boot Applications for development and testing purposte bec it is lightweight and easy to configure.
+
