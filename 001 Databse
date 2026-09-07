@@ -4,7 +4,7 @@
 4) What is SQL ?
 5) What is Query ?
 6) What is SQL Queries ? Types of SQL queries ?
-
+7) ORM 
 ----------------------------------------------------------------------
 1) Data and Databases
       Data :
@@ -82,3 +82,8 @@
             - Data Defintion Language [ DDL ]      - ( CREATE , ALTER , DROP , TRUNCATE )
             - Data Control Language [ DCL ]         - ( GRANT , REVOKE )
             - Transaction Control Language [ TCL ]   - ( COMMIT , ROLLBACK , SAVEPOINT )
+
+
+7) ORM 
+      - ORM ( Object Relational Mapping ) is a technique that maps Java O=objects to database tables and database tables to Java objects..
+      - ORM is a technique used to connect JAva classes with database tables, so developers can work with objects instead of writing SQL queries manually.
