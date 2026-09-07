@@ -88,3 +88,4 @@
       - ORM ( Object Relational Mapping ) is a technique that maps Java O=objects to database tables and database tables to Java objects..
       - ORM is a technique used to connect JAva classes with database tables, so developers can work with objects instead of writing SQL queries manually.
       * Whenever there is a class, that class can be automatically converted to a table with its attributes being converted to colums.
+      * Whenever an object is created, its data can be saved in the database as row in table, this is automatically handled by ORM.
