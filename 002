@@ -1,8 +1,0 @@
-1) What is JPA?
-
-
---------------------------------------------------------------------------------
-1) What is JPA? ( Java Persistence API )
-    JPA is a Java specification used for Object Relational Mapping ( ORM ). It helps developers interact with databases using Java
-     object instead of writing SQL queries manually.
-

@@ -1,0 +1,22 @@
+1) What is JPA? Advantages of JPA?
+2) H2 Database
+
+--------------------------------------------------------------------------------
+1) What is JPA? ( Java Persistence API )
+    JPA is a Java specification used for Object Relational Mapping ( ORM ). It helps developers interact with databases using Java
+     object instead of writing SQL queries manually.
+
+    Advantages of JPA :- 
+    --------------------
+        1) Reduce SQL Code
+        2) ORM Support
+        3) Database Independent
+        4) Simple CRUD Operations
+        5) Less Boilerplate Code
+        6) Faster Development
+
+2) H2 Database
+    H2 Database is a lightweight, in-memory relational database written in Java. It is commonly used in Spring Boot applications for 
+     development and testing.
+    - H2 is an op[en-source, lightweight relational database that runs in memory. It is mainly used for development and testing bec it is easy
+       to configure and does not require a seperate database installation.
