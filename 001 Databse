@@ -1,6 +1,8 @@
 1) Data and Databases
 2) Persistent Data and Dynamic Data
 3) What is DBMS?
+4) What is SQL ?
+5) What is Query ?
 
 ----------------------------------------------------------------------
 1) Data and Databases
@@ -51,3 +53,20 @@
                   Data is stored in formats like documents, key-value, graph or column-based
                   Suitable for large-scale and flexible data
                   Ex:- MongoDB, Cassandra, Redis
+
+
+4) What is SQL ?
+      SQL ( Structured Query Language ) is a standard language used to communicate with and manage data in RDBMS .
+      - SQL is a database lang used to store , retieve, update and manage data in relational databases such as MySQL, Oracle, SQL Server and PostgreSQL.
+
+      What can SQL do ?
+            Retrieve data → SELECT
+            Insert data → INSERT
+            Update data → UPDATE
+            Delete data → DELETE
+            Create tables → CREATE TABLE
+            Modify tables → ALTER TABLE
+            Remove tables → DROP TABL
+
+5) What is Query ?
+      A query is a command written in SQL to communicate with a database and perform operations on data.
