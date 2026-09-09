@@ -2,7 +2,7 @@
 2) H2 Database
 3) Entity 
 4) @Entity
-
+5) JPA Repository?
 --------------------------------------------------------------------------------
 1) What is JPA? ( Java Persistence API )
     JPA is a Java specification used for Object Relational Mapping ( ORM ). It helps developers interact with databases using Java
@@ -29,6 +29,22 @@
 
 4) @Entity
     @Entity is a JPA annotation used to tell spring Boot/Hibernate that a Java class should be mapped to a database table.
+
+5) JPA Repository?
+    JPA Repository is an interface provided by Spring Data JPA that helps us perform database operations without writing SQL queries for common tasks. It automatically 
+     provides CRUD methods like save(), findById(), findAll(), update() and delete().
+    * JpaRepository is a Spring Data JPA interface that provides ready-made CRUD, pagination and sorting methods for database operations, reducing the need to write SQL 
+       and repository implementation code.
+    * When we extend JpaRepository, Spring provides methods like :
+            save(entity);
+            findById(id);
+            findAll();
+            deleteById(id);
+            count();
+
+
+
+
 
 
 
