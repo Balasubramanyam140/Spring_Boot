@@ -1,5 +1,7 @@
 1) What is JPA? Advantages of JPA?
 2) H2 Database
+3) Entity 
+4) @Entity
 
 --------------------------------------------------------------------------------
 1) What is JPA? ( Java Persistence API )
@@ -21,4 +23,14 @@
     - H2 is an open-source, lightweight relational database that runs in memory. It is mainly used for development and testing bec it is easy
        to configure and does not require a seperate database installation.
     - H2 is an in-memory relational database used in Spring Boot Applications for development and testing purposte bec it is lightweight and easy to configure.
+
+3) Entity 
+    An Entity is a real-world object that has data ( attributes ) and can be stored in a database.
+
+4) @Entity
+    @Entity is a JPA annotation used to tell spring Boot/Hibernate that a Java class should be mapped to a database table.
+
+
+
+
 
