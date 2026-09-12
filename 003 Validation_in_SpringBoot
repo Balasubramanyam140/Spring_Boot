@@ -1,0 +1,10 @@
+1) Validations
+
+
+---------------------------------------------------------------------------------------------------------
+1) Validations
+      * Validations in Spring Boot means checking whether the data given by user is correct before processing or saving it to the database. 
+        Spring Boot commonly uses Bean Validation ( Hibernate Validator ) for this purpose.
+      * Validations in Spring Boot are all about ensuring the data your application receives meets certain criteria before its processed.
+      * Validation in Spring Boot is used to verify user input before processing it. We use Annotations like @NotNull, @NotBlank, @Email 
+        and @Size along with @Valid to ensure that only valid data enters the application.
