@@ -2,6 +2,8 @@ https://hibernate.org/validator/     - Follow this about Validators
 
 
 1) Validations
+2) @RestControllerAdvice
+3) @ExceptionHandler
 
 
 ---------------------------------------------------------------------------------------------------------
@@ -11,3 +13,11 @@ https://hibernate.org/validator/     - Follow this about Validators
       * Validations in Spring Boot are all about ensuring the data your application receives meets certain criteria before its processed.
       * Validation in Spring Boot is used to verify user input before processing it. We use Annotations like @NotNull, @NotBlank, @Email 
         and @Size along with @Valid to ensure that only valid data enters the application.
+
+2) @RestControllerAdvice
+      @RestControllerAdvice is used to handle exceptions globally for all REST controllers in a Spring Boot Applications.
+       It helps you write exceptions handling code in one place instead of repeating it in every controller.
+
+3) @ExceptionHandler
+      * @ExceptionHandler is used to catch and handle specific exceptions in Spring Boot and return a custom response to the client.
+      * @ExceptionHandler is used to define a method that handles specific exceptions and returns a custom error response.
