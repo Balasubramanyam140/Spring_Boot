@@ -10,3 +10,8 @@
 
 2) DTO  ( Data Transfer Object )
       DTO is an object used to transfer data betwee client and server without exposing the actual entity class.
+
+      Why DTO
+      ------
+            We use DTO to transfer only the required data between client and server. It improves security by hiding sensitive fields, reduces
+            data transfer and decouples the API layer from the database entity layer.
