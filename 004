@@ -1,5 +1,12 @@
 1) What is Pagination
+2) DTO
 
 ----------------------------------------------------------------------------
 1) What is Pagination
       Pagination is a technique used to retieve data page by page instead of loading all records at once from the database.
+                                    or
+      Pagination is a feature in Spring Boot used to fetch large amounts of data in smaller chunks called oages. It improbes performance 
+      and reduce memory usage. Spring Data JPA provides pagination using pageable, PageRequest, and Page interfaces.
+
+2) DTO  ( Data Transfer Object )
+      DTO is an object used to transfer data betwee client and server without exposing the actual entity class.
