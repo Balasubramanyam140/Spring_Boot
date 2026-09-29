@@ -1,5 +1,7 @@
 1) What is Pagination
 2) DTO
+3) DTO pattern
+
 
 ----------------------------------------------------------------------------
 1) What is Pagination
@@ -15,3 +17,31 @@
       ------
             We use DTO to transfer only the required data between client and server. It improves security by hiding sensitive fields, reduces
             data transfer and decouples the API layer from the database entity layer.
+
+3) DTO pattern
+      DTO is a design pattern used to transfer data between layers of an application, especially between the Client <-> Controller <-> Service <-> Database.
+      Why do we use DTO?
+      -----------------
+           - Hide sensitive data (like password).
+           - Send only required fields to the client.
+           - Reduce data transfer size.
+           - Separate API response structure from database entities.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
