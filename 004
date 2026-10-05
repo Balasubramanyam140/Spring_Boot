@@ -1,7 +1,7 @@
 1) What is Pagination
 2) DTO
 3) DTO pattern
-
+4) ModelMapper
 
 ----------------------------------------------------------------------------
 1) What is Pagination
@@ -27,8 +27,14 @@
            - Reduce data transfer size.
            - Separate API response structure from database entities.
 
-
-
+4) ModelMapper
+      ModelMapper is a Java library used to convert one object to another object automatically.
+                  In Spring Boot, it is commonly used to map:
+                        Entity → DTO
+                        DTO → Entity
+                                          or
+      ModelMapper is a Java library used to automatically map data between objects, commonly Entity and DTO classes. 
+      It reduces boilerplate code by eliminating manual getter and setter mappings.
 
 
 
